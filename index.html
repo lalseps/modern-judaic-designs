@@ -1362,15 +1362,6 @@
 
   /* Mobile (768px and down) — phones in landscape, small tablets */
   @media (max-width: 768px) {
-    /* Top strip: smaller, tighter */
-    .top-strip {
-      font-size: 10px;
-      letter-spacing: 0.08em;
-      padding: 7px 16px;
-      line-height: 1.4;
-    }
-    .top-strip span { margin: 0 6px; }
-
     /* Navigation: hide desktop links, show mobile menu button */
     nav {
       padding: 14px 20px;
@@ -1480,75 +1471,76 @@
 
     /* Hero */
     .hero {
-      margin-top: 90px;
-      padding: 32px 20px 20px;
+      margin-top: 86px;
+      padding: 40px 22px 28px;
     }
-    .hero-grid { gap: 36px; min-height: 0; }
+    .hero-grid { gap: 40px; min-height: 0; }
     .hero-meta {
-      margin-bottom: 24px;
-      font-size: 10px;
-      letter-spacing: 0.16em;
+      margin-bottom: 28px;
+      font-size: 11px;
+      letter-spacing: 0.18em;
     }
-    .hero-meta::before { width: 24px; }
+    .hero-meta::before { width: 28px; }
     .hero h1 {
-      font-size: 44px;
-      line-height: 1;
-      margin-bottom: 24px;
+      font-size: 40px;
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+      margin-bottom: 26px;
     }
-    .hero h1 .hebrew { font-size: 0.36em; margin-top: 16px; }
-    .hero p { font-size: 16px; margin-bottom: 32px; }
+    .hero h1 .hebrew { font-size: 0.34em; margin-top: 18px; line-height: 1.3; }
+    .hero p { font-size: 17px; line-height: 1.55; margin-bottom: 32px; }
 
     /* Hero CTAs: stack vertical, full-width */
     .hero-actions { flex-direction: column; align-items: stretch; gap: 12px; width: 100%; }
     .hero-actions .btn {
       justify-content: center;
       width: 100%;
-      padding: 16px 24px;
+      padding: 17px 24px;
       font-size: 13px;
     }
 
     /* Hero visual: smaller aspect ratio, tighter card */
     .hero-visual { aspect-ratio: 1/1.05; }
-    .hv-label { font-size: 9px; letter-spacing: 0.14em; }
-    .hv-label::before, .hv-l2::after { width: 16px; }
+    .hv-label { font-size: 10px; letter-spacing: 0.14em; }
+    .hv-label::before, .hv-l2::after { width: 18px; }
     .hv-l1 { top: 16px; left: 16px; }
     .hv-l2 { bottom: 16px; right: 16px; }
     .hv-card {
       position: relative;
       left: 0;
       bottom: 0;
-      margin: 20px 8px 0;
+      margin: 20px 4px 0;
       max-width: none;
-      padding: 20px 22px;
+      padding: 22px 24px;
     }
-    .hv-card-num { font-size: 28px; }
-    .hv-card-text { font-size: 11px; }
+    .hv-card-num { font-size: 30px; }
+    .hv-card-text { font-size: 13px; line-height: 1.5; }
 
     /* Marquee */
-    .marquee { padding: 14px 0; margin-top: 48px; }
-    .marquee-track { gap: 36px; font-size: 16px; }
-    .marquee-item { gap: 36px; }
+    .marquee { padding: 16px 0; margin-top: 56px; }
+    .marquee-track { gap: 40px; font-size: 17px; }
+    .marquee-item { gap: 40px; }
 
-    /* Section spacing */
+    /* Section spacing — calibrated for mobile rhythm */
     .section, .editorial, .congregations {
-      padding: 72px 20px;
+      padding: 64px 22px;
     }
     .etsy-wrap, .quote-section {
-      padding: 72px 20px;
+      padding: 64px 22px;
     }
-    .featured-wrap .section { padding: 72px 20px; }
+    .featured-wrap .section { padding: 64px 22px; }
 
     /* Section heads */
     .section-head {
       flex-direction: column;
       align-items: flex-start;
       gap: 20px;
-      margin-bottom: 48px;
+      margin-bottom: 44px;
     }
-    .section-title { font-size: 36px; line-height: 1.02; }
-    .section-desc { font-size: 15px; max-width: 100%; }
-    .eyebrow { font-size: 10px; letter-spacing: 0.18em; margin-bottom: 14px; }
-    .eyebrow::before { width: 18px; }
+    .section-title { font-size: 34px; line-height: 1.02; letter-spacing: -0.025em; }
+    .section-desc { font-size: 16px; max-width: 100%; line-height: 1.55; }
+    .eyebrow { font-size: 11px; letter-spacing: 0.2em; margin-bottom: 16px; }
+    .eyebrow::before { width: 20px; }
 
     /* Collections */
     .collections {
@@ -1557,28 +1549,28 @@
     }
     .col-1, .col-2, .col-3 {
       grid-column: span 1;
-      aspect-ratio: 4/3.2;
+      aspect-ratio: 4/3.4;
       margin-top: 0;
     }
-    .collection-inner { padding: 24px; }
-    .col-name, .col-1 .col-name { font-size: 28px; }
-    .col-hebrew { font-size: 16px; margin-bottom: 8px; }
-    .col-subtitle { font-size: 13px; }
-    .col-meta { font-size: 10px; letter-spacing: 0.1em; }
-    .col-arrow { width: 36px; height: 36px; }
-    .col-tag { font-size: 9px; padding: 3px 8px; }
+    .collection-inner { padding: 26px; }
+    .col-name, .col-1 .col-name { font-size: 30px; line-height: 1.02; }
+    .col-hebrew { font-size: 17px; margin-bottom: 10px; }
+    .col-subtitle { font-size: 14px; }
+    .col-meta { font-size: 11px; letter-spacing: 0.1em; }
+    .col-arrow { width: 38px; height: 38px; }
+    .col-tag { font-size: 10px; padding: 4px 10px; }
 
     /* Products: keep 2 columns for browsing density */
     .product-grid {
       grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
+      gap: 18px;
     }
-    .product-img { margin-bottom: 12px; }
-    .product-name { font-size: 16px; line-height: 1.2; }
-    .product-artist { font-size: 11px; }
-    .product-price { font-size: 15px; }
-    .product-badge { font-size: 9px; padding: 4px 8px; top: 10px; left: 10px; }
-    .product-heart { width: 30px; height: 30px; top: 10px; right: 10px; }
+    .product-img { margin-bottom: 14px; }
+    .product-name { font-size: 17px; line-height: 1.2; }
+    .product-artist { font-size: 12px; margin-top: 2px; }
+    .product-price { font-size: 16px; }
+    .product-badge { font-size: 10px; padding: 4px 9px; top: 10px; left: 10px; }
+    .product-heart { width: 32px; height: 32px; top: 10px; right: 10px; }
     .product-meta { gap: 6px; }
     .product-add-overlay {
       opacity: 1;
@@ -1586,92 +1578,96 @@
       bottom: 8px;
       left: 8px;
       right: 8px;
-      padding: 8px;
-      font-size: 10px;
+      padding: 9px;
+      font-size: 11px;
       letter-spacing: 0.06em;
     }
-    .view-all { margin-top: 40px; }
+    .view-all { margin-top: 44px; }
 
     /* Etsy section */
-    .etsy-inner { gap: 40px; }
-    .etsy-title { font-size: 36px; }
-    .etsy-desc { font-size: 15px; margin-bottom: 28px; }
+    .etsy-inner { gap: 44px; }
+    .etsy-title { font-size: 34px; line-height: 1.02; }
+    .etsy-desc { font-size: 16px; line-height: 1.55; margin-bottom: 32px; }
     .etsy-stats {
       grid-template-columns: repeat(3, 1fr);
       gap: 0;
-      margin-bottom: 28px;
+      margin-bottom: 32px;
     }
-    .etsy-stat { padding: 16px 6px !important; }
-    .etsy-stat:nth-child(2) { padding-left: 12px !important; }
-    .etsy-stat:last-child { padding-left: 12px !important; }
-    .etsy-stat .num { font-size: 26px; }
-    .etsy-stat .label { font-size: 9px; letter-spacing: 0.12em; }
+    .etsy-stat { padding: 18px 6px !important; }
+    .etsy-stat:nth-child(2) { padding-left: 14px !important; }
+    .etsy-stat:last-child { padding-left: 14px !important; }
+    .etsy-stat .num { font-size: 28px; }
+    .etsy-stat .label { font-size: 10px; letter-spacing: 0.14em; }
 
     /* Etsy preview: smaller, cleaner */
-    .etsy-shop-head { padding: 16px 18px; }
-    .etsy-shop-name { font-size: 18px; }
-    .etsy-shop-meta { font-size: 10px; }
-    .etsy-follow { padding: 7px 14px; font-size: 11px; }
+    .etsy-shop-head { padding: 18px 20px; }
+    .etsy-shop-name { font-size: 19px; }
+    .etsy-shop-meta { font-size: 11px; margin-top: 4px; }
+    .etsy-follow { padding: 8px 16px; font-size: 12px; }
     .etsy-grid { grid-template-columns: repeat(2, 1fr); }
-    .etsy-item { padding: 10px; }
-    .etsy-item-name { font-size: 11px; }
-    .etsy-item-price { font-size: 12px; }
-    .etsy-stars { font-size: 9px; }
+    .etsy-item { padding: 12px; }
+    .etsy-item-name { font-size: 12px; line-height: 1.35; }
+    .etsy-item-price { font-size: 13px; }
+    .etsy-stars { font-size: 10px; }
     .etsy-bar { padding: 8px 12px; }
-    .etsy-bar-url { font-size: 10px; padding: 4px 10px; }
+    .etsy-bar-url { font-size: 11px; padding: 5px 11px; }
 
     /* Congregations */
-    .cong-grid { gap: 40px; }
-    .cong-title { font-size: 36px; }
-    .cong-desc { font-size: 15px; margin-bottom: 28px; }
+    .cong-grid { gap: 44px; }
+    .cong-title { font-size: 34px; line-height: 1.02; }
+    .cong-desc { font-size: 16px; line-height: 1.55; margin-bottom: 32px; }
     .cong-visual { aspect-ratio: 1/1.1; }
-    .cong-badge { top: 16px; right: 16px; padding: 12px 14px; max-width: 160px; }
-    .cong-badge-num { font-size: 22px; }
-    .cong-badge-text { font-size: 9px; letter-spacing: 0.12em; }
-    .cong-visual-corner { font-size: 10px; bottom: 16px; left: 16px; }
-    .cong-list { margin-bottom: 32px; }
+    .cong-badge { top: 16px; right: 16px; padding: 14px 16px; max-width: 170px; }
+    .cong-badge-num { font-size: 24px; }
+    .cong-badge-text { font-size: 10px; letter-spacing: 0.14em; line-height: 1.4; }
+    .cong-visual-corner { font-size: 11px; bottom: 16px; left: 16px; }
+    .cong-list { margin-bottom: 36px; }
     .cong-list li {
       flex-direction: column;
       align-items: flex-start;
-      gap: 6px;
-      padding: 16px 0;
+      gap: 8px;
+      padding: 18px 0;
     }
-    .cong-list-num { font-size: 14px; }
-    .cong-list-name { font-size: 18px; min-width: 0; }
-    .cong-list-desc { font-size: 13px; }
+    .cong-list-num { font-size: 15px; }
+    .cong-list-name { font-size: 19px; min-width: 0; }
+    .cong-list-desc { font-size: 14px; line-height: 1.5; }
     .cong-actions { flex-direction: column; align-items: stretch; gap: 12px; }
     .cong-actions .btn { justify-content: center; width: 100%; }
 
     /* Buttons */
-    .btn { padding: 14px 22px; font-size: 12px; }
+    .btn { padding: 15px 22px; font-size: 13px; }
 
     /* Quote section */
-    .quote-text { font-size: 24px; line-height: 1.3; }
-    .quote-mark { font-size: 52px; margin-bottom: 16px; }
-    .quote-attr { font-size: 11px; letter-spacing: 0.16em; }
+    .quote-text { font-size: 26px; line-height: 1.3; letter-spacing: -0.015em; }
+    .quote-mark { font-size: 56px; margin-bottom: 18px; }
+    .quote-attr { font-size: 12px; letter-spacing: 0.18em; }
 
     /* Footer */
     .footer-top {
       grid-template-columns: 1fr;
-      gap: 40px;
-      margin-bottom: 48px;
+      gap: 44px;
+      margin-bottom: 52px;
     }
-    .footer-tag { font-size: 18px; max-width: 100%; }
-    .footer-col h4 { margin-bottom: 18px; font-size: 10px; }
-    .footer-col li { margin-bottom: 10px; }
-    .footer-col a { font-size: 14px; }
+    .footer-tag { font-size: 19px; max-width: 100%; }
+    .footer-col h4 { margin-bottom: 20px; font-size: 11px; letter-spacing: 0.2em; }
+    .footer-col li { margin-bottom: 12px; }
+    .footer-col a { font-size: 15px; }
     .nl-form { max-width: 100%; }
     .nl-form input { font-size: 16px; } /* 16px prevents iOS zoom-on-focus */
-    .nl-note { font-size: 11px; }
+    .nl-note { font-size: 13px; line-height: 1.5; }
     .footer-bottom {
       flex-direction: column;
       align-items: flex-start;
       gap: 14px;
-      padding-top: 28px;
-      font-size: 11px;
+      padding-top: 32px;
+      font-size: 12px;
     }
-    .footer-bottom-links { gap: 18px; flex-wrap: wrap; }
-    footer { padding: 60px 20px 32px; }
+    .footer-bottom-links { gap: 20px; flex-wrap: wrap; }
+    footer { padding: 64px 22px 36px; }
+
+    /* Top strip — slightly bigger for readability */
+    .top-strip { font-size: 11px; padding: 8px 16px; letter-spacing: 0.1em; }
+    .top-strip span { margin: 0 7px; }
   }
 
   /* Hide the mobile menu button on desktop */
@@ -1684,9 +1680,9 @@
 
   /* Tiny phones (375px and down) — iPhone SE / older */
   @media (max-width: 380px) {
-    .hero h1 { font-size: 38px; }
+    .hero h1 { font-size: 36px; }
     .section-title, .etsy-title, .cong-title { font-size: 30px; }
-    .quote-text { font-size: 21px; }
+    .quote-text { font-size: 22px; }
     .top-strip { font-size: 9px; padding: 6px 12px; }
     .logo-text { font-size: 16px; }
   }
